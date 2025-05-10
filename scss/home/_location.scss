@@ -1,0 +1,54 @@
+.location-box{
+    .location-box__image{
+        
+        height: 100%;
+        img {
+            width: 100%; /* Chiếm toàn bộ chiều rộng của phần tử cha */
+            height: 100%; /* Chiếm toàn bộ chiều cao của phần tử cha */
+            object-fit: cover; /* Đảm bảo hình ảnh không bị méo */
+            display: block; /* Loại bỏ khoảng trắng không mong muốn */
+        }
+    }
+    .location-box__content{
+        @extend .location-box__image;
+        background: $primaryColor;
+        color: #fff;
+        padding: 100px 200px;
+        .location-box__content--inner{
+            h2{
+                color: #fff;
+                font-weight: 100;
+                font-size: 3.4rem;
+            }
+            p{
+                font-size: 1.4rem;
+                margin-top: 40px;
+                line-height: 2.5rem;
+            }
+            .inner-readmore{
+                margin-bottom: 60px !important; 
+                a{
+                    color: #fff;
+                    span{
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        word-spacing: 3px;
+                        letter-spacing: 3px;
+                    }
+
+                    i{
+                        border: 1px solid #fff;
+                        display: inline-block;
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        text-align: center;
+                        line-height: 30px;
+                        font-size: 1.2rem;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

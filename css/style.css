@@ -1,0 +1,319 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Monsieur+La+Doulaise&family=Playwrite+DK+Loopet:wght@100..400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  font-family: 1rem;
+  font-family: Lato, sans-serif;
+  line-height: 1.2;
+  color: #777777;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #403c34;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #0f0f0f;
+  margin: 10px 0;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.btn {
+  background-color: #242424;
+  color: #fff;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #898f4b;
+}
+
+.header__logo {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.header {
+  position: relative;
+  padding: 27px 0;
+}
+.header .header__menu {
+  padding-top: 20px;
+}
+.header .header__menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.header .header__menu ul li a {
+  text-transform: uppercase;
+  padding: 0 15px;
+}
+.header .header__menu ul li:last-child {
+  margin-left: 15px;
+}
+.header .header__menu ul .search {
+  display: flex;
+  align-items: center; /* Căn giữa icon theo chiều dọc */
+  justify-content: center; /* Căn giữa icon theo chiều ngang */
+}
+.header .header__menu ul .search a {
+  position: relative;
+  top: -10px;
+}
+.header .header__menu ul .search a i {
+  font-size: 2rem;
+}
+.header .header__logo {
+  position: absolute;
+  width: 165px;
+  top: 0;
+  z-index: 5;
+}
+.header .header__hotline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .header__hotline .phone i {
+  font-size: 2rem;
+  margin-right: 10px;
+  margin-left: 5px;
+}
+.header .header__hotline span {
+  display: block;
+}
+.header .header__hotline span:first-child {
+  font-size: 1rem;
+  color: #767676;
+  text-transform: uppercase;
+}
+.header .header__hotline span:last-child {
+  font-size: 1.43rem;
+  color: #898f4b;
+  font-weight: bold;
+}
+
+.banner-box {
+  position: relative;
+}
+.banner-box .banner-box__controls .banner-box__controls--prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.5rem;
+  border: none;
+  color: #333;
+  left: 5px;
+  margin-left: 24px;
+}
+.banner-box .banner-box__controls .banner-box__controls--next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.5rem;
+  border: none;
+  color: #333;
+  right: 5px;
+  margin-right: 24px;
+}
+.banner-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.whyus-box {
+  padding: 50px 0;
+}
+.whyus-box .container {
+  width: 70%;
+}
+.whyus-box .container h2 {
+  text-align: center;
+  font-size: 2.14rem;
+  color: #2c2922;
+  margin-bottom: 80px;
+}
+.whyus-box .container .whyus-box__lists {
+  margin-bottom: 40px;
+}
+.whyus-box .container .whyus-box__lists .whyus-box--item {
+  width: 75%;
+}
+.whyus-box .container .whyus-box__lists .whyus-box--item .img-coffee {
+  width: 70px;
+}
+.whyus-box .container .whyus-box__lists .whyus-box--item h3 {
+  text-transform: uppercase;
+  font-size: 1.14rem;
+  color: #0f0f0f;
+}
+.whyus-box .container .whyus-box__button {
+  text-align: center;
+}
+.whyus-box .container .whyus-box__button a {
+  border: 2px solid rgba(121, 109, 109, 0.4588235294);
+  padding: 10px 50px;
+  font-size: 1.14rem;
+  color: #8c877d;
+  text-transform: uppercase;
+}
+
+.products-box {
+  padding: 60px 0;
+  background: url("../../images/products-bg.png") no-repeat;
+  background-size: cover;
+}
+.products-box .container h2 {
+  text-align: center;
+  font-size: 1.7rem;
+  color: #403c34;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+.products-box .container h2 span {
+  color: #898f4b;
+  font-family: "Dancing Script", cursive;
+  font-size: 5.1rem;
+  margin: 0 10px;
+}
+.products-box .container .products-box__lists {
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.products-box .container .products-box__lists .product-box__lists--inner .products-box--item {
+  text-align: center;
+}
+.products-box .container .products-box__lists .product-box__lists--inner .products-box--item .item_name {
+  font-size: 2.14rem;
+}
+.products-box .container .products-box__lists .product-box__lists--inner .products-box--item .item_name a {
+  color: #1f1f1f;
+}
+.products-box .container .products-box__lists .product-box__lists--inner .products-box--item .item__category {
+  color: #898f4b;
+  text-transform: uppercase;
+}
+.products-box .container .products-box__lists .product-box__lists--inner .products-box--item .item__price {
+  color: #373737;
+  font-size: 1.3rem;
+}
+.products-box .container .products-box__lists .products-box__lists--controls .controls__prev {
+  position: absolute;
+  top: 30%;
+  transform: translateY(-50%);
+  background: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.5rem;
+  border: none;
+  color: #333;
+  left: 0;
+}
+.products-box .container .products-box__lists .products-box__lists--controls .controls__next {
+  position: absolute;
+  top: 30%;
+  transform: translateY(-50%);
+  background: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.5rem;
+  border: none;
+  color: #333;
+  right: 0;
+}
+
+.location-box .location-box__image, .location-box .location-box__content {
+  height: 100%;
+}
+.location-box .location-box__image img, .location-box .location-box__content img {
+  width: 100%; /* Chiếm toàn bộ chiều rộng của phần tử cha */
+  height: 100%; /* Chiếm toàn bộ chiều cao của phần tử cha */
+  object-fit: cover; /* Đảm bảo hình ảnh không bị méo */
+  display: block; /* Loại bỏ khoảng trắng không mong muốn */
+}
+.location-box .location-box__content {
+  background: #898f4b;
+  color: #fff;
+  padding: 100px 200px;
+}
+.location-box .location-box__content .location-box__content--inner h2 {
+  color: #fff;
+  font-weight: 100;
+  font-size: 3.4rem;
+}
+.location-box .location-box__content .location-box__content--inner p {
+  font-size: 1.4rem;
+  margin-top: 40px;
+  line-height: 2.5rem;
+}
+.location-box .location-box__content .location-box__content--inner .inner-readmore {
+  margin-bottom: 60px !important;
+}
+.location-box .location-box__content .location-box__content--inner .inner-readmore a {
+  color: #fff;
+}
+.location-box .location-box__content .location-box__content--inner .inner-readmore a span {
+  font-weight: bold;
+  text-transform: uppercase;
+  word-spacing: 3px;
+  letter-spacing: 3px;
+}
+.location-box .location-box__content .location-box__content--inner .inner-readmore a i {
+  border: 1px solid #fff;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  font-size: 1.2rem;
+  margin-left: 10px;
+}/*# sourceMappingURL=style.css.map */

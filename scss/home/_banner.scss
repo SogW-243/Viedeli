@@ -1,0 +1,29 @@
+.banner-box{
+
+    position: relative;
+
+    .banner-box__controls{
+
+        .banner-box__controls--prev{
+            @include vertical-middle-banner;
+            @include arrow-button(#fff, #333);
+            left: 5px;
+            margin-left: 24px;
+        }
+        .banner-box__controls--next{
+            @include vertical-middle-banner;
+            @include arrow-button(#fff, #333);
+            right: 5px; 
+            margin-right: 24px;
+        }
+    }
+
+
+
+    img{
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+}
+

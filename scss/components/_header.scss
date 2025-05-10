@@ -1,0 +1,74 @@
+.header{
+
+    position: relative;
+    padding: 27px 0;
+
+    .header__menu{
+
+        padding-top: 20px;
+
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            li{
+                a{
+                    text-transform: uppercase;
+                    padding: 0 15px;
+                }
+                &:last-child{
+                    margin-left: 15px;
+                }
+            }
+            .search{
+                display: flex;
+                align-items: center; /* Căn giữa icon theo chiều dọc */
+                justify-content: center; /* Căn giữa icon theo chiều ngang */
+                a {
+                    position: relative;
+                    top: -10px; // Di chuyển icon lên trên (điều chỉnh giá trị theo ý muốn)
+                    i{
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
+    
+    .header__logo{
+        position: absolute;
+        width: 165px;
+        top: 0;      
+        z-index: 5;
+    }
+    
+    .header__hotline{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        .phone {
+            i{
+                font-size: 2rem;
+                margin-right: 10px;
+                margin-left: 5px;
+            }
+        }
+
+        span{
+            display: block;
+            &:first-child{
+                font-size: 1rem;
+                color: #767676;
+                text-transform: uppercase;
+            }
+
+            &:last-child{
+                font-size: 1.43rem;
+                color: $primaryColor;
+                font-weight: bold;
+            }
+        }
+    }
+}

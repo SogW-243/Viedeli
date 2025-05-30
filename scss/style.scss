@@ -6,9 +6,13 @@
 
   //Import Components
   @import 'Components/header';
+  @import 'Components/footer';
 
   //Import Pages
   @import 'home/banner';
   @import 'home/whyus';
   @import 'home/products';
   @import 'home/location';
+  @import 'home/news';
+  @import 'home/partners';
+  @import 'home/contact';

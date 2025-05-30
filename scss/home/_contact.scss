@@ -1,0 +1,86 @@
+.contact-box{
+    @include section-base(30px);
+
+    .contact-box__image{
+        height: 100%;
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover; // Đảm bảo hình ảnh không bị méo
+        }
+    }
+
+    .contact-box__form{
+        @extend .contact-box__image;
+        background: $primaryColor;
+        padding: 50px;
+        color: #fff;
+
+        h2{
+            color: #fff;
+            font-weight: 100;
+            font-size: 2.78rem;
+            margin-bottom: 20px;
+        }
+
+        .contact-box--item{
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            padding-left: 10px;
+            background-color: #fff;
+            i{
+                
+                font-size: 1.4rem;
+                color: #3a3a3a;
+            }
+            input{
+                width: 100%;
+                padding: 15px 15px 15px 15px;
+                text-transform: uppercase;
+                color: #3a3a3a;
+                font-size: 0.85rem;
+
+                &::placeholder{
+                    color: #3a3a3a;
+                }
+            }
+        }
+
+        .btn{
+            &:hover{
+                background: $secondaryColor;
+            }
+        }
+
+        .contact-box--hotline{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            .phone {
+                i{
+                    font-size: 2rem;
+                    margin-right: 10px;
+                    margin-left: 5px;
+                }
+            }
+
+            span{
+                display: block;
+                &:first-child{
+                    font-size: 1rem;
+                    color: $background;
+                    text-transform: uppercase;
+                }
+
+                &:last-child{
+                    font-size: 1.43rem;
+                    color: $background;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

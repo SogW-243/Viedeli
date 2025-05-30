@@ -5,15 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viedeli Project</title>
     <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/grid.min.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Monsieur+La+Doulaise&family=Playwrite+DK+Loopet:wght@100..400&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
         <div class="container">
             <div class="row">
-                <div class="col col-2">
+                <div class="col-sm-2 col-md-2 col-lg-2 hidden-desktop">
+                    <div class="header__menu-toggle">
+                        <label for="toggle-menu">
+                            <i class="fa-solid fa-bars"></i>
+                        </label>
+                    </div><!--End .header__menu-toggle-->
+                </div>
+                <div class="col col-2 col-sm-8 col-md-8 col-lg-8">
                     <div class="header__logo">
                         <a href="#">
                             <img src="images/Logo.PNG" alt="">
@@ -21,7 +29,8 @@
                     </div><!--End .header__logo-->
                 </div>
 
-                <div class="col col-7">
+                <div class="col col-8  header__menu-mobile">
+                    <input type="checkbox" id="toggle-menu">
                     <nav class="header__menu">
                         <ul>
                             <li><a href="#">Giới thiệu</a></li>
@@ -36,7 +45,7 @@
                     </nav><!--End .header__menu-->
                 </div>
 
-                <div class="col col-3">
+                <div class="col col-2 col-sm-2 col-md-2 col-lg-2">
                     <div class="header__hotline">
                         <div class="phone">
                             <i class="fa-solid fa-phone-volume"></i>
@@ -46,6 +55,9 @@
                             <span>+84 0938 166 918</span>
                         </div>
                     </div><!--End .header__hotline-->
+                    <div class="header__search-mobile">
+                        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    </div><!--End .header__search-mobile-->
                 </div>
             </div>
         </div>
@@ -72,39 +84,45 @@
             <h2>TẠI SAO CHỌN VIEDELI</h2>
             <div class="whyus-box__lists">
                 <div class="row">
-                    <div class="col col-4">
+                    <div class="col col-4 col-sm-12 col-md-12">
                         <div class="whyus-box--item">
                             <div class="img-coffee">
                                 <img src="images/box-item.PNG" alt="">
                             </div>
                             <h3>TỰ NHIÊN NGUYÊN CHẤT</h3>
-                            <p>
-                                Viedeli cam kết cung cấp cà phê có nguồn gốc rõ ràng và chất lượng được kiểm soát chặt chẽ.
-                            </p>
+                            <div class="whyus-box__passage">
+                                <p>
+                                    Viedeli cam kết cung cấp cà phê có nguồn gốc rõ ràng và chất lượng được kiểm soát chặt chẽ.
+                                </p>
+                            </div>
                         </div>
                     </div><!--End .col-->
 
-                    <div class="col col-4">
+                    <div class="col col-4 col-sm-12 col-md-12">
                         <div class="whyus-box--item">   
                             <div class="img-coffee">
                                 <img src="images/box-item.PNG" alt="">
                             </div>
                                 <h3>THUẬN TIỆN</h3>
-                                <p>
-                                    Viedeli định hướng phát triển các sản phẩm chất lượng cao nhưng sản xuất đơn giản, tiết kiệm và thuận tiện cho người sử dụng.
-                                </p>
+                                <div class="whyus-box__passage">
+                                    <p>
+                                        Viedeli định hướng phát triển các sản phẩm chất lượng cao nhưng sản xuất đơn giản, tiết kiệm và thuận tiện cho người sử dụng.
+                                    </p>
+                                </div>
                         </div>
                     </div><!--End .col-->
     
-                    <div class="col col-4">
+                    <div class="col col-4 col-sm-12 col-md-12">
                         <div class="whyus-box--item">
                             <div class="img-coffee">
                                 <img src="images/box-item.PNG" alt="">
                             </div>
                                 <h3>THÂN THIỆN MÔI TRƯỜNG</h3>
-                                <p>
-                                    Các sản phẩm của Viedeli hướng tới mục tiêu thân thiện môi trường, từ trồng trọt, chế biến, tới bảo quản và tiêu thụ.
-                                </p>
+                                <div class="whyus-box__passage">
+                                    <p>
+                                        Các sản phẩm của Viedeli hướng tới mục tiêu thân thiện môi trường, từ trồng trọt, chế biến, tới bảo quản và tiêu thụ.
+                                    </p>
+                                </div>
                         </div>
                     </div><!--End .col-->
                 </div>
@@ -122,7 +140,7 @@
             <div class="products-box__lists">
                 <div class="product-box__lists--inner">
                     <div class="row">
-                        <div class="col col-4">
+                        <div class="col col-4 col-sm-12 col-md-12">
                             <div class="products-box--item">
                                 <a href="#">
                                     <img src="images/coffee_left.png" alt="">
@@ -133,7 +151,7 @@
                             </div><!--End .products-box--item-->
                         </div><!--End .col-->
 
-                        <div class="col col-4">
+                        <div class="col col-4 col-sm-12 col-md-12">
                             <div class="products-box--item">
                                 <a href="#">
                                     <img src="images/coffee_center.png" alt="">
@@ -144,7 +162,7 @@
                             </div><!--End .products-box--item-->
                         </div><!--End .col-->
 
-                        <div class="col col-4">
+                        <div class="col col-4 col-sm-12 col-md-12">
                             <div class="products-box--item">
                                 <a href="#">
                                     <img src="images/coffee_right.png" alt="">
@@ -172,12 +190,12 @@
 <!------------------------------------------------------------------------->
     <section class="location-box">
         <div class="row row-collapse">
-            <div class=" col-6">
+            <div class=" col-6 col-sm-12 col-md-12 col-lg-12">
                 <div class="location-box__image">
                     <img src="images/img-location.jpg" alt="">
                 </div>
             </div>
-            <div class=" col-6">
+            <div class=" col-6 col-sm-12 col-md-12 col-lg-12">
                 <div class="location-box__content">
                     <div class="location-box__content--inner">
                         <h2>Điểm phục vụ</h2>
@@ -193,5 +211,211 @@
             </div>
         </div>
     </section><!--End .location-box-->
+<!------------------------------------------------------------------------->
+    <section class="news-box">
+        <div class="container">
+            <h2>Tin Nổi Bật</h2>
+            <div class="new-box__lists">
+                <div class="row">
+                    <div class="col col-4 col-sm-12 col-md-12">
+                        <div class="news-box--item">
+                            <a href="#"><img src="images/tin1.jpg" alt=""></a>
+                            <p class="item__category">Thông Tin</p>
+                            <h3 class="item__title"><a href="#">TẶNG CÀ PHÊ CHO VĂN PHÒNG</a></h3>
+                            <p>Viedeli chuyên cung cấp cà phê rang mộc theo chuẩn quốc tế, nguyên hạt và xay sẵn, cho văn phòng các công ty.   Chúng tôi xin kính tặng một túi sản phẩm...</p>
+                        </div>
+                    </div><!--End .col-->
+
+                    <div class="col col-4 col-sm-12 col-md-12">
+                        <div class="news-box--item">
+                            <a href="#"><img src="images/tin2.jpg" alt=""></a>
+                            <p class="item__category">Thông Tin</p>
+                            <h3 class="item__title"><a href="#">THÔNG BÁO CHUYỂN ĐỊA ĐIỂM</a></h3>
+                            <p>Shop Viedeli Thái Hà chuyển về địa chỉ số 33 ngõ 424 phố Trần Khát Chân, quận Hai Bà Trưng, Hà Nội, từ ngày 01.03.23. Xin trân trọng kính báo... </p>
+                        </div>
+                    </div><!--End .col-->
+
+                    <div class="col col-4 col-sm-12 col-md-12">
+                        <div class="news-box--item">
+                            <a href="#"><img src="images/tin3.PNG" alt=""></a>
+                            <p class="item__category">Thông Tin</p>
+                            <h3 class="item__title"><a href="#">CÁC MỨC RANG CÀ PHÊ CỦA VIEDELI</a></h3>
+                            <p>Các sản phẩm cà phê rang xay của Viedeli hiện có hai mức tiêu chuẩn là mức vừa (medium roasts) và mức kỹ (dark roasts).   1. Mức rang vừa (Medium) có...</p>
+                        </div>
+                    </div><!--End .col-->
+
+                </div>
+            </div><!--End .new-box__lists-->
+        </div>
+    </section><!--End .news-box-->
+<!-------------------------------------------------------------------->
+    <section class="partner-box">
+        <div class="container">
+            <h2>Đối tác</h2>
+            <div class="partner-box__lists">
+                <div class="row">
+                    <div class="col col-3">
+                    <div class="partner-box--item">
+                        <a href="#">
+                            <img src="images/partner1.PNG" alt="">
+                        </a>
+                    </div><!--End .partner-box--item-->
+                </div>
+
+                <div class="col col-3">
+                    <div class="partner-box--item">
+                        <a href="#">
+                            <img src="images/partner2.PNG" alt="">
+                        </a>
+                    </div><!--End .partner-box--item-->
+                </div>
+
+                <div class="col col-3">
+                    <div class="partner-box--item">
+                        <a href="#">
+                            <img src="images/partner3.PNG" alt="">
+                        </a>
+                    </div><!--End .partner-box--item-->
+                </div>
+
+                <div class="col col-3">
+                    <div class="partner-box--item">
+                        <a href="#">
+                            <img src="images/partner4.PNG" alt="">
+                        </a>
+                    </div><!--End .partner-box--item-->
+                </div>
+                </div>
+            </div><!--End .partner-box__lists-->
+        </div>
+    </section><!--End .partner-box-->
+<!-------------------------------------------------------------------->
+    <div class="contact-box">
+        <div class="row row-collapse">
+            <div class="col col-4 col-sm-12 col-md-12 col-lg-12">
+                <div class="contact-box__image">
+                    <img src="images/contact-left.png" alt="">
+                </div>
+            </div>
+            <div class="col col-4 col-sm-12 col-md-12 col-lg-12">
+                <div class="contact-box__form">
+                    <h2>Liên hệ mua hàng</h2>
+                    <form action="">
+                        <div class="contact-box--item user">
+                            <i class="fa-regular fa-user"></i>
+                            <input type="text" placeholder="HỌ TÊN">
+                        </div><!--End .contact-box--item-->
+
+                        <div class="contact-box--item email">
+                            <i class="fa-regular fa-envelope"></i>
+                            <input type="text" placeholder="EMAIL">
+                        </div><!--End .contact-box--item-->
+
+                        <div class="contact-box--item phone">
+                            <i class="fa-solid fa-phone"></i>
+                            <input type="text" placeholder="SỐ ĐIỆN THOẠI">
+                        </div><!--End .contact-box--item-->
+
+                        <div class="row">
+                            <div class="col col-6 col-sm-6 col-md-6">
+                                <button type="submit" class="btn">
+                                    Liên hệ
+                                </button>
+                            </div>
+                            <div class="col col-6">
+                                <div class="contact-box--hotline">
+                                    <div class="phone">
+                                        <i class="fa-solid fa-phone-volume"></i>
+                                    </div>
+                                    <div class="contact__hotline--inner">
+                                        <span>HOTLINE 24/7</span>
+                                        <span>+84 0938 166 918</span>
+                                    </div>
+                                </div><!--End .contact-box--hotline-->
+                            </div>
+                        </div>
+                    </form>
+                </div><!--End .contact-box__form-->
+            </div>
+            <div class="col col-4 col-sm-12 col-md-12 col-lg-12">
+                <div class="contact-box__image">
+                    <img src="images/contact-right.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+<!-------------------------------------------------------------------->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col col-3 col-sm-6">
+                    <div class="footer__logo">
+                        <a href="#">
+                            <img src="images/Logo.PNG" alt="">
+                        </a>
+                    </div><!--End .footer__logo-->
+                </div><!--End .col-->
+
+                <div class="col col-3 col-sm-6">
+                    <div class="footer__info">
+                        <p class="footer__info--title">
+                            Công ty TNHH Viedeli
+                        </p>
+                        <p>
+                            Viedeli Coffee: <br>
+                            +84 (0)938 166 918 <br>
+                            Viedeli Saigon:   <br>
+                            +84 (0)928 006 3 10 <br>
+                            Viedeli Xuân Đỉnh: <br>
+                            +84 (0)938 166 918
+                        </p>
+                        <p>
+                            viedelicoffee@gmail.com
+                        </p>
+                    </div><!--End .footer__info-->
+                </div><!--End .col-->
+
+                <div class="col col-3 col-sm-12">
+                    <div class="footer__info">
+                        <p class="footer__info--title">
+                            ĐỊA CHỈ:
+                        </p>
+                        <p>
+                            <strong>Hà Nội: <br></strong>
+                            Số 3 ngõ 205/37/16 Xuân Đỉnh, Xuân Đỉnh, Bắc Từ Liêm, Hà Nội
+                        </p>
+                        <p>
+                            <strong>TP Hồ Chí Minh: <br></strong>
+                            331 Bến Vân Đồn, Phường 1, Quận 4, Hồ Chí Minh
+                        </p>
+                    </div><!--End .footer__info-->
+                </div><!--End .col-->
+                <div class="col col-3 col-sm-12">
+                    <div class="footer__subscribe">
+
+                        <p class="footer__subscribe--title">Đăng ký nhận khuyến mãi</p>
+
+                        <form action="">
+                            <div class="footer__subscribe--item">
+                                <i class="fa-regular fa-envelope"></i>
+                                <input type="text" placeholder="Email của bạn">
+                                
+                            </div>
+                        </form>
+
+                        <div class="footer--socials">
+                            <ul>
+                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa-solid fa-wifi"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
+                                <li><a href="#"><i class="fa-solid fa-fingerprint"></i></a></li>
+                            </ul>
+                        </div>
+                    </div><!--End .footer__subscribe-->
+                </div>
+            </div>
+        </div>
+    </footer><!--End .footer-->
 </body>
 </html>

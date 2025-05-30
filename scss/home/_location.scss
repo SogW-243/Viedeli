@@ -13,8 +13,12 @@
         @extend .location-box__image;
         background: $primaryColor;
         color: #fff;
-        padding: 100px 200px;
-        .location-box__content--inner{
+        padding: 160px 200px;
+        @media(max-width: 992px){
+            padding: 25px 80px;
+
+        }
+        .location-box__content--inner{   
             h2{
                 color: #fff;
                 font-weight: 100;
@@ -26,7 +30,7 @@
                 line-height: 2.5rem;
             }
             .inner-readmore{
-                margin-bottom: 60px !important; 
+                // margin-bottom: 60px !important; 
                 a{
                     color: #fff;
                     span{
@@ -46,6 +50,42 @@
                         line-height: 30px;
                         font-size: 1.2rem;
                         margin-left: 10px;
+                    }
+                }
+            }
+            @media(max-width: 992px){
+                h2{
+                    color: #fff;
+                    font-weight: 100;
+                    font-size: 1.4rem;
+                }   
+                p{
+                    font-size: 1rem;
+                    margin-top: 24px;
+                    line-height: 2rem;
+                }
+                .inner-readmore{
+                    // margin-bottom: 60px !important; 
+                    a{
+                        color: #fff;
+                        span{
+                            font-weight: bold;
+                            text-transform: uppercase;
+                            word-spacing: 1px;
+                            letter-spacing: 3px;
+                        }
+
+                        i{
+                            border: 1px solid #fff;
+                            display: inline-block;
+                            width: 30px;
+                            height: 30px;
+                            border-radius: 50%;
+                            text-align: center;
+                            line-height: 30px;
+                            font-size: 1.2rem;
+                            margin-left: 10px;
+                        }
                     }
                 }
             }

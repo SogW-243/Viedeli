@@ -2,6 +2,10 @@
     @include section-base(60px);
     background: url("../../images/products-bg.png") no-repeat;
     background-size: cover;
+    @media(max-width: 767px){
+        background: none;
+
+    }
     .container{
         h2{
             text-align: center;
@@ -24,6 +28,10 @@
             .product-box__lists--inner{
                 .products-box--item{
                     text-align: center;
+                     @media (max-width: 767px){
+                        width: 70%;
+                        margin: 0 auto; 
+                     }
                     .item_name{
                         font-size: 2.14rem;
                         a{
@@ -42,6 +50,9 @@
                 }
             }
             .products-box__lists--controls{
+                @media (max-width: 767px){
+                    display: none;
+                }
                 .controls__prev{
                     @include vertical-middle-products(40%);
                     @include arrow-button(#fff, #333);

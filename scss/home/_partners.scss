@@ -1,0 +1,15 @@
+.partner-box{
+    @include section-base(30px);
+    h2{
+        text-align: center;
+        font-size: 2.14rem;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+
+    .partner-box__lists{
+        .partner-box--item{
+            text-align: center;
+        }
+    }
+}

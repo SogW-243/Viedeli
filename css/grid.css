@@ -47,7 +47,7 @@
   margin-right: calc(0px - var(--column-space-small));
 }
 
-.row .row-collapse { /* Loại bỏ hoàn toàn khoảng cách*/
+.row.row-collapse { /* Loại bỏ hoàn toàn khoảng cách*/
   margin-left: 0;
   margin-right: 0;
 }

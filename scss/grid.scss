@@ -7,7 +7,7 @@
 
 :root{
     --container-width: 1170px;
-    --column-space: 10px;
+     --column-space: 10px;
     --column-space-small: 5px;
 }
 
@@ -46,7 +46,7 @@
     margin-right: calc(0px - var(--column-space-small));
 }
 
-.row .row-collapse{ /* Loại bỏ hoàn toàn khoảng cách*/
+.row.row-collapse{ /* Loại bỏ hoàn toàn khoảng cách*/
     margin-left: 0;
     margin-right: 0;
 }
